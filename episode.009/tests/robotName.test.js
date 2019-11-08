@@ -39,7 +39,7 @@ describe(':: robotName', () => {
       robot.regenerateName()
       usedNames.add(robot.name)
     }
-
+    console.log(usedNames.size)
     expect(usedNames.size).equal(NUMBER_OF_ROBOTS + 1)
   })
 
